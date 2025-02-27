@@ -1,0 +1,13 @@
+{
+  "dependencies": {
+    "mjml": "^4.15.3",
+    "nodemailer": "^6.10.0"
+  },
+  "scripts": {
+    "build": "node ./src/server.js",
+    "watch": "nodemon --watch ./src/templates/template.mjml --exec npm run build"
+  },
+  "devDependencies": {
+    "nodemon": "^3.1.9"
+  }
+}

@@ -1,0 +1,37 @@
+<mjml>
+  <mj-body>
+    <!-- Header com logo e saudação -->
+    <mj-section>
+      <mj-column>
+        <mj-image src="{{companyLogo}}" alt="Logo" width="100px"></mj-image>
+        <mj-text font-size="20px" font-weight="bold">
+          Olá {{companyName}}, tudo bem?
+        </mj-text>
+      </mj-column>
+    </mj-section>
+
+    <!-- Corpo do email -->
+    <mj-section>
+      <mj-column>
+        <mj-text>
+          Sou Lucas Silva, um desenvolvedor Front-End com 3 anos de experiência.
+          Estou à procura de novas oportunidades, e acredito que posso agregar
+          muito ao time de sua empresa.
+        </mj-text>
+        <mj-text>
+          Em anexo, você encontrará meu currículo e informações detalhadas sobre
+          minhas habilidades e experiências.
+        </mj-text>
+      </mj-column>
+    </mj-section>
+
+    <!-- CTA -->
+    <mj-section>
+      <mj-column>
+        <mj-button href="mailto:seu-email@dominio.com"
+          >Vamos conversar?</mj-button
+        >
+      </mj-column>
+    </mj-section>
+  </mj-body>
+</mjml>
