@@ -1,37 +1,67 @@
 <mjml>
-  <mj-body>
-    <!-- Header com logo e saudação -->
-    <mj-section>
-      <mj-column>
-        <mj-image src="{{companyLogo}}" alt="Logo" width="100px"></mj-image>
-        <mj-text font-size="20px" font-weight="bold">
-          Olá {{companyName}}, tudo bem?
-        </mj-text>
-      </mj-column>
-    </mj-section>
+  <mj-head>
+  <mj-style inline="inline">
+    *{
+      box-sizing: border-box;
+    }
+    .header{
+      background: linear-gradient(135deg, rgba(3,22,109,1) 50%, rgba(5,37,126,1) 100%);
+    }
+    .header-bg-icon {
+      content: url("data:image/svg+xml,%3Csvg width='257' height='154' viewBox='0 0 257 154' fill='none' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath d='M77 154L0 77L77 0L95.2875 18.2875L36.2542 77.3208L94.9667 136.033L77 154ZM179.667 154L161.379 135.713L220.413 76.6792L161.7 17.9667L179.667 0L256.667 77L179.667 154Z' fill='%2300085B'/%3E%3C/svg%3E%0A");
+    }
+    .title, .subtitle {
+      padding: 0 !important;
+      
+    }
+    .title div {
+      color: white !important;
+      font-size: 40px !important;
+      font-weight: 900 !important;
+      text-align: center !important;
+      padding: 4px 0 8px;
 
-    <!-- Corpo do email -->
-    <mj-section>
-      <mj-column>
-        <mj-text>
-          Sou Lucas Silva, um desenvolvedor Front-End com 3 anos de experiência.
-          Estou à procura de novas oportunidades, e acredito que posso agregar
-          muito ao time de sua empresa.
-        </mj-text>
-        <mj-text>
-          Em anexo, você encontrará meu currículo e informações detalhadas sobre
-          minhas habilidades e experiências.
-        </mj-text>
-      </mj-column>
-    </mj-section>
-
-    <!-- CTA -->
-    <mj-section>
-      <mj-column>
-        <mj-button href="mailto:seu-email@dominio.com"
-          >Vamos conversar?</mj-button
+    }
+    .subtitle div{
+      color: white !important;
+      font-size: 16px !important;
+      font-weight: bold !important;
+      line-height: 26px;
+      text-align: center !important;
+    }
+  </mj-style>
+  </mj-head>
+  <mj-body background-color="#f7f7f7" width="832px">
+    <mj-wrapper css-class="header" padding="0 8px">
+      <mj-section
+        background-position="center"
+        background-repeat="no-repeat"
+        background-size="contain"
+        background-url="data:image/svg+xml,%3Csvg width='258' height='134' viewBox='0 0 258 134' fill='none' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath d='M77.6666 144L0.666626 67L77.6666 -10L95.9541 8.2875L36.9208 67.3208L95.6333 126.033L77.6666 144ZM180.333 144L162.046 125.713L221.079 66.6792L162.367 7.96667L180.333 -10L257.333 67L180.333 144Z' fill='%2300085B'/%3E%3C/svg%3E%0A"
         >
-      </mj-column>
-    </mj-section>
+        <mj-column>
+          <mj-text css-class="subtitle">
+            Front-End Developer
+          </mj-text>
+          <!-- Aplicando a classe 'title' aqui -->
+          <mj-text css-class="title">
+            Lucas Silva
+          </mj-text>
+          <mj-text
+            align="center"
+            color="white"
+            font-size="16px"
+            font-weight="400"
+            line-height="26px"
+            padding="0"
+          >
+            Transformando ideias em experiências que encantam.
+          </mj-text>
+        </mj-column>
+      </mj-section>
+    </mj-wrapper>
+    <mj-wrapper>
+
+    </mj-wrapper>
   </mj-body>
 </mjml>
