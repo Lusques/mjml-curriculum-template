@@ -1,35 +1,58 @@
 <mjml>
   <mj-head>
-  <mj-style inline="inline">
-    *{
-      box-sizing: border-box;
-    }
-    .header{
-      background: linear-gradient(135deg, rgba(3,22,109,1) 50%, rgba(5,37,126,1) 100%);
-    }
-    .header-bg-icon {
-      content: url("data:image/svg+xml,%3Csvg width='257' height='154' viewBox='0 0 257 154' fill='none' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath d='M77 154L0 77L77 0L95.2875 18.2875L36.2542 77.3208L94.9667 136.033L77 154ZM179.667 154L161.379 135.713L220.413 76.6792L161.7 17.9667L179.667 0L256.667 77L179.667 154Z' fill='%2300085B'/%3E%3C/svg%3E%0A");
-    }
-    .title, .subtitle {
-      padding: 0 !important;
+    <mj-style inline="inline">
+      *{
+        box-sizing: border-box;
+      }
+      .header{
+        background: linear-gradient(135deg, rgba(3,22,109,1) 50%, rgba(5,37,126,1) 100%);
+      }
+      .header-bg-icon {
+        content: url("data:image/svg+xml,%3Csvg width='257' height='154' viewBox='0 0 257 154' fill='none' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath d='M77 154L0 77L77 0L95.2875 18.2875L36.2542 77.3208L94.9667 136.033L77 154ZM179.667 154L161.379 135.713L220.413 76.6792L161.7 17.9667L179.667 0L256.667 77L179.667 154Z' fill='%2300085B'/%3E%3C/svg%3E%0A");
+      }
+      .title, .subtitle {
+        padding: 0 !important;
+        
+      }
+      .title div {
+        color: white !important;
+        font-size: 40px !important;
+        font-weight: 900 !important;
+        text-align: center !important;
+        padding: 4px 0 8px;
+  
+      }
+      .subtitle div{
+        color: white !important;
+        font-size: 16px !important;
+        font-weight: bold !important;
+        line-height: 26px;
+        text-align: center !important;
+      }
+      .description{
+        background: white;
+        padding: 32px 48px 48px;
+      }
+      .description-container{
+        padding-bottom: 24px;
+      }
+      .description td{
+        padding: 0 !important;
+      }
+      .description-title div{
+        font-size: 20px !important;
+        font-weight: 600 !important;
+        line-height: 30px !important;
+        padding-bottom: 16px;
+      }
+      .description-text div{
+        color: #606060 !important;
+        font-size: 16px !important;
+        font-weight: 500 !important;
+        line-height: 26px !important;
+      }
       
-    }
-    .title div {
-      color: white !important;
-      font-size: 40px !important;
-      font-weight: 900 !important;
-      text-align: center !important;
-      padding: 4px 0 8px;
-
-    }
-    .subtitle div{
-      color: white !important;
-      font-size: 16px !important;
-      font-weight: bold !important;
-      line-height: 26px;
-      text-align: center !important;
-    }
-  </mj-style>
+    </mj-style>
   </mj-head>
   <mj-body background-color="#f7f7f7" width="832px">
     <mj-wrapper css-class="header" padding="0 8px">
@@ -43,7 +66,6 @@
           <mj-text css-class="subtitle">
             Front-End Developer
           </mj-text>
-          <!-- Aplicando a classe 'title' aqui -->
           <mj-text css-class="title">
             Lucas Silva
           </mj-text>
@@ -60,8 +82,66 @@
         </mj-column>
       </mj-section>
     </mj-wrapper>
-    <mj-wrapper>
-
+    <mj-wrapper css-class="description">
+      <mj-section css-class="description-container">  
+        <mj-column padding="0">
+          <mj-text css-class="description-title" padding="0">
+            Olá [Nome da Empresa], tudo bem?
+          </mj-text>
+          <mj-text css-class="description-text" padding="0">
+            Sou desenvolvedor Front-end com 3 anos de experiência em variadas tecnologias e frameworks. Estou em busca de novas oportunidades e acredito que posso contribuir de maneira significativa para o time da sua empresa.
+          </mj-text>
+        </mj-column>
+      </mj-section>
+      <mj-section css-class="description-container">  
+        <mj-column padding="0">
+          <mj-text css-class="description-title" padding="0">
+            🔹 Por que me escolher para o seu time?
+          </mj-text>
+          <mj-text css-class="description-text" padding="0">
+            💡 Experiência sólida com desenvolvimento Front-end, com foco em interfaces performáticas e bem estruturadas.</br>
+          </mj-text>
+          <mj-spacer height="8px"/>
+          <mj-text css-class="description-text" padding="0">
+            🚀 Experiência em React.js, Vue.js, TypeScript, Wordpress e Figma, sempre atualizado com as melhores práticas.</br>
+          </mj-text>
+          <mj-spacer height="8px"/>
+          <mj-text css-class="description-text" padding="0">
+            🎯 Comprometido com código limpo, acessibilidade e experiência do usuário.</br>
+          </mj-text>
+          <mj-spacer height="8px"/>
+          <mj-text css-class="description-text" padding="0">
+            🤝 Colaboração e aprendizado contínuo são pilares no meu trabalho.</br>
+          </mj-text>
+          <mj-spacer height="8px"/>
+          <mj-text css-class="description-text" padding="0">
+            🗣️ Comunicação clara e objetiva, facilitando a troca entre times técnicos e não técnico.</br>
+          </mj-text>
+          <mj-spacer height="8px"/>
+          <mj-text css-class="description-text" padding="0">
+            📚 Curioso e sempre em busca de novos aprendizados, me adaptando rapidamente a diferentes desafios.</br>
+          </mj-text>
+          <mj-spacer height="8px"/>
+          <mj-text css-class="description-text" padding="0">
+            🔍 Pensamento analítico e resolução de problemas, garantindo soluções eficientes e escaláveis.</br>
+          </mj-text>
+          <mj-spacer height="8px"/>
+        </mj-column>
+      </mj-section>
+      <mj-section css-class="description-container">  
+        <mj-column padding="0">
+          <mj-text css-class="description-title" padding="0">
+            🔹 Trabalho sério, feedbacks reais
+          </mj-text>
+          <mj-text css-class="description-text" padding="0">
+            "(...) Você é muito bom no que faz, humilde e sempre disposto a aprender."</br>— Guilherme Yabu, Ex-Tech Lead
+          </mj-text>
+          <mj-spacer height="16px"/>
+          <mj-text css-class="description-text">
+            "Lucas é uma pessoa racional e equilibrada, com uma maturidade emocional acima da média. Ele lida com desafios e pressões de maneira muito funcional"</br>— Felipe Rizzoto, feedback profissional e avaliação psicológica
+          </mj-text>
+        </mj-column>
+      </mj-section>
     </mj-wrapper>
   </mj-body>
 </mjml>
