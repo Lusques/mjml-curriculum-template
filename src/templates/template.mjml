@@ -7,11 +7,8 @@
       td{
         padding: 0 !important;
       }
-      .header{
+      .header, .footer{
         background: linear-gradient(135deg, rgba(3,22,109,1) 50%, rgba(5,37,126,1) 100%);
-      }
-      .header td:first{
-        padding: 24px 0 !important;
       }
       .header-bg-icon {
         content: url("data:image/svg+xml,%3Csvg width='257' height='154' viewBox='0 0 257 154' fill='none' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath d='M77 154L0 77L77 0L95.2875 18.2875L36.2542 77.3208L94.9667 136.033L77 154ZM179.667 154L161.379 135.713L220.413 76.6792L161.7 17.9667L179.667 0L256.667 77L179.667 154Z' fill='%2300085B'/%3E%3C/svg%3E%0A");
@@ -129,12 +126,16 @@
   </mj-head>
   <mj-body background-color="#f7f7f7" width="832px">
     <mj-wrapper css-class="header" padding="0 8px">
-      <mj-section
-        background-position="center"
-        background-repeat="no-repeat"
-        background-size="contain"
-        background-url="data:image/svg+xml,%3Csvg width='258' height='134' viewBox='0 0 258 134' fill='none' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath d='M77.6666 144L0.666626 67L77.6666 -10L95.9541 8.2875L36.9208 67.3208L95.6333 126.033L77.6666 144ZM180.333 144L162.046 125.713L221.079 66.6792L162.367 7.96667L180.333 -10L257.333 67L180.333 144Z' fill='%2300085B'/%3E%3C/svg%3E%0A"
-        >
+      <mj-raw>
+        <div style="
+          background-position: center;
+          background-repeat: no-repeat;
+          background-size: contain;
+          background-image: url('data:image/svg+xml,%3Csvg width=\'258\' height=\'134\' viewBox=\'0 0 258 134\' fill=\'none\' xmlns=\'http://www.w3.org/2000/svg\'%3E%3Cpath d=\'M77.6666 144L0.666626 67L77.6666 -10L95.9541 8.2875L36.9208 67.3208L95.6333 126.033L77.6666 144ZM180.333 144L162.046 125.713L221.079 66.6792L162.367 7.96667L180.333 -10L257.333 67L180.333 144Z\' fill=\'%2300085B\'/%3E%3C/svg%3E%0A');
+          padding: 24px 0;
+        ">
+      </mj-raw>
+      <mj-section>
         <mj-column>
           <mj-text css-class="subtitle">
             Front-End Developer
@@ -154,6 +155,9 @@
           </mj-text>
         </mj-column>
       </mj-section>
+      <mj-raw>
+        </div>
+      </mj-raw>
     </mj-wrapper>
     <mj-wrapper css-class="description">
       <mj-section css-class="description-container">  
@@ -344,6 +348,15 @@
       <mj-raw>
         </div>
       </mj-raw>
+    </mj-wrapper>
+    <mj-wrapper css-class="footer">
+      <mj-section>
+        <mj-column>
+          <mj-text>
+            teste
+          </mj-text>
+        </mj-column>
+      </mj-section>
     </mj-wrapper>
   </mj-body>
 </mjml>
