@@ -4,8 +4,14 @@
       *{
         box-sizing: border-box;
       }
+      td{
+        padding: 0 !important;
+      }
       .header{
         background: linear-gradient(135deg, rgba(3,22,109,1) 50%, rgba(5,37,126,1) 100%);
+      }
+      .header td:first{
+        padding: 24px 0 !important;
       }
       .header-bg-icon {
         content: url("data:image/svg+xml,%3Csvg width='257' height='154' viewBox='0 0 257 154' fill='none' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath d='M77 154L0 77L77 0L95.2875 18.2875L36.2542 77.3208L94.9667 136.033L77 154ZM179.667 154L161.379 135.713L220.413 76.6792L161.7 17.9667L179.667 0L256.667 77L179.667 154Z' fill='%2300085B'/%3E%3C/svg%3E%0A");
@@ -51,7 +57,74 @@
         font-weight: 500 !important;
         line-height: 26px !important;
       }
-      
+      .curriculum {
+        background: white;
+        padding-bottom: 48px;
+        padding: 0 48px 49px;
+      }
+      .curriculum hr{
+        margin: 16px auto;
+        background: #2B3340;
+        border: none;
+        height: 4px;
+        width: 64px;
+      }
+      .curriculum-container{
+        border: solid 1px black;
+      }
+      .cv-header-title div{
+        color: #2B3340 !important;
+        font-size: 28px !important;
+        font-weight: 600;
+        text-align: center !important;
+        text-transform: uppercase;
+      }
+      .cv-header-subtitle div{
+        color: #2B3340 !important;
+        font-size: 16px !important;
+        font-weight: 600;
+        text-align: center !important;
+        text-transform: uppercase;
+      }
+      .cv-header-summary-title div{
+        color: #2B3340 !important;
+        font-size: 20px !important;
+        text-align: center !important;
+        text-transform: uppercase;
+      }
+      .cv-header-summary-text div{
+        color: #2B3340 !important;
+        font-size: 16px !important;
+        margin: auto;
+        max-width: 520px;
+        text-align: center !important;
+      }
+      .cv-body-title div{
+        color: #2B3340;
+        font-size: 18px !important;
+        text-align: center !important;
+        text-transform: uppercase;
+      }
+      .cv-body-subtitle div {
+        font-size: 14px;
+        font-weight: bold;
+        text-transform: uppercase;
+      }
+      .cv-body-details div {
+        font-size: 12px;
+        font-weight: bold;
+      }
+      .cv-body-text div{
+        color: #2B3340;
+        font-size: 14px !important;
+        line-height: 24px !important;
+      }
+      .ps-3 {
+        padding-left: 16px !important;
+      }
+      .pe-3 {
+        padding-right: 16px !important;
+      }
     </mj-style>
   </mj-head>
   <mj-body background-color="#f7f7f7" width="832px">
@@ -142,6 +215,135 @@
           </mj-text>
         </mj-column>
       </mj-section>
+    </mj-wrapper>
+    <mj-wrapper css-class="curriculum">
+      <mj-raw>
+        <div style="border: solid 1px black; padding: 48px">
+      </mj-raw>
+      <mj-section css-class="cv-header">
+        <mj-column>
+          <mj-text css-class="cv-header-title">
+            Lucas Carlos da Silva
+          </mj-text>
+          <mj-spacer height="8px" />
+          <mj-text css-class="cv-header-subtitle">
+            Front-end Developer
+            <hr>
+          </mj-text>
+          <mj-text css-class="cv-header-summary-title">
+            Resumo
+          </mj-text>
+          <mj-spacer height="12px" />
+          <mj-text css-class="cv-header-summary-text">
+            Desenvolvedor Front-End Web com experiência sólida em tecnologias modernas e frameworks como Vue.js, React.js e TypeScript. Possuo habilidades em design responsivo e interfaces interativas, utilizando Sass, Bootstrap e WordPress (com e sem Elementor).
+          </mj-text>
+          <mj-spacer height="24px" />
+        </mj-column>
+      </mj-section>
+      <mj-section css-class="cv-body">
+        <mj-column css-class="pe-3">
+          <mj-text css-class="cv-body-title">
+            Sobre mim
+          </mj-text>
+          <mj-spacer height="8px" />
+          <mj-text css-class="cv-body-text">
+            25 anos, solteiro. Residente em São Paulo.</br>
+            - Celular: (11) 95123-3225</br>
+            - Email: lucascarlosjobs@gmail.com</br>
+            - Github: Lusques</br>
+          </mj-text>
+          <mj-spacer height="24px" />
+          <mj-text css-class="cv-body-title">
+            Habilidades
+          </mj-text>
+          <mj-spacer height="8px" />
+          <mj-text css-class="cv-body-text">
+            Experiência com:</br>
+            - HTML, CSS, JavaScript, Sass</br>
+            - React.js, Bootstrap, REST API</br>
+            - Git, Trello, Azure DevOps</br>
+            - Scrum, Figma</br>
+            - jQuery, PHP, WordPress (com e sem Elementor)</br>
+            - ASP.NET Core</br>
+            - Conhecimento com:</br>
+            - Flutter e Dart (básico)</br>
+            - Angular (básico)</br>
+          </mj-text>
+          <mj-spacer height="24px" />
+          <mj-text css-class="cv-body-title">
+            Cursos extra curriculares
+          </mj-text>
+          <mj-spacer height="8px" />
+          <mj-text css-class="cv-body-text">
+            - Formação front-end - Alura</br>
+            - Formação HTML & CSS - Alura</br>
+            - Formação Acessibilidade web - Alura</br>
+            - Formação Ouse com VueJs 3 - Alura</br>
+            - Web design - Origamid</br>
+            - Inglês pré-intermediário - Alura</br>
+          </mj-text>
+          
+        </mj-column>
+        <mj-column css-class="ps-3">
+          <mj-text css-class="cv-body-title">
+            Formação acadêmica
+          </mj-text>
+          <mj-spacer height="12px" />
+          <mj-text css-class="cv-body-subtitle">
+            Senac São Paulo
+          </mj-text>
+          <mj-spacer height="4px" />
+          <mj-text css-class="cv-body-text">
+            Análise e desenvolvimento de sistemas <br/>
+            2024-2026
+          </mj-text>
+          <mj-spacer height="16px" />
+          <mj-text css-class="cv-body-subtitle">
+            Senai
+          </mj-text>
+          <mj-spacer height="4px" />
+          <mj-text css-class="cv-body-text">
+            Desenvolvimento de sistemas</br>
+            2021-2023
+          </mj-text>
+          <mj-spacer height="24px" />
+          <mj-text css-class="cv-body-title">
+            Experiência profissional
+          </mj-text>
+          <mj-spacer height="12px" />
+          <mj-text css-class="cv-body-subtitle">
+            Desenvolvedor Front-end
+          </mj-text>
+          <mj-spacer height="8px" />
+          <mj-text css-class="cv-body-details">
+            Toodoo| Julho de 2022 - Fevereiro de 2025
+          </mj-text>
+          <mj-spacer height="8px" />
+          <mj-text css-class="cv-body-text">
+            - Desenvolvimento de aplicações web responsivas com Vue.js e React.js.</br>
+            - Implementação de designs otimizados e acessíveis utilizando Sass e Bootstrap.</br>
+            - Criação e manutenção de sites WordPress, com e sem uso do Elementor.</br>
+            - Colaboração com equipes multidisciplinares seguindo metodologias ágeis (Scrum).</br>
+          </mj-text>
+
+          <mj-spacer height="16px" />
+          <mj-text css-class="cv-body-subtitle">
+            Desenvolvedor Front-end
+          </mj-text>
+          <mj-spacer height="8px" />
+          <mj-text css-class="cv-body-details">
+            Seri.e | Março de 2022 - Julho de 2022
+          </mj-text>
+          <mj-spacer height="8px" />
+          <mj-text css-class="cv-body-text">
+            - Criação de layouts responsivos com HTML, CSS e Vue.js.</br>
+            - Desenvolvimento e personalização de sites no WordPress com Elementor.</br>
+          </mj-text>
+        </mj-column>
+      </mj-section>
+      <mj-raw>
+        </div>
+      </mj-raw>
     </mj-wrapper>
   </mj-body>
 </mjml>
