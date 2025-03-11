@@ -31,7 +31,10 @@
       }
       .description{
         background: white;
-        padding: 48px 24px 24px;
+        padding: 32px 48px 48px;
+      }
+      .description-container{
+        padding-bottom: 24px;
       }
       .description td{
         padding: 0 !important;
@@ -51,7 +54,7 @@
       .curriculum {
         background: white;
         padding-bottom: 48px;
-        padding: 0 24px 24px;
+        padding: 0 48px 49px;
       }
       .curriculum hr{
         margin: 16px auto;
@@ -99,19 +102,16 @@
       .cv-body-subtitle div {
         font-size: 14px;
         font-weight: bold;
-        text-align: center !important;
         text-transform: uppercase;
       }
       .cv-body-details div {
         font-size: 12px;
         font-weight: bold;
-        text-align: center !important;
       }
       .cv-body-text div{
         color: #2B3340;
         font-size: 14px !important;
         line-height: 24px !important;
-        text-align: center !important;
       }
       .ps-3 {
         padding-left: 16px !important;
@@ -144,7 +144,7 @@
       }
     </mj-style>
   </mj-head>
-  <mj-body background-color="#f7f7f7">
+  <mj-body background-color="#f7f7f7" width="832px">
     <mj-wrapper css-class="header" padding="0 8px">
       <mj-raw>
         <div style="
@@ -152,7 +152,7 @@
           background-repeat: no-repeat;
           background-size: contain;
           background-image: url('https://res.cloudinary.com/drckdzkua/image/upload/v1741384383/bg-header_udu8ig.png');
-          padding: 24px;
+          padding: 24px 0;
         ">
       </mj-raw>
       <mj-section>
@@ -242,7 +242,7 @@
     </mj-wrapper>
     <mj-wrapper css-class="curriculum">
       <mj-raw>
-        <div style="border: solid 1px black; padding: 32px 16px 48px">
+        <div style="border: solid 1px black; padding: 48px">
       </mj-raw>
       <mj-section css-class="cv-header">
         <mj-column>
@@ -265,7 +265,7 @@
         </mj-column>
       </mj-section>
       <mj-section css-class="cv-body">
-        <mj-column>
+        <mj-column css-class="pe-3">
           <mj-text css-class="cv-body-title">
             Sobre mim
           </mj-text>
@@ -277,7 +277,6 @@
             - Github: Lusques</br>
           </mj-text>
           <mj-spacer height="24px" />
-          
           <mj-text css-class="cv-body-title">
             Habilidades
           </mj-text>
@@ -295,7 +294,21 @@
             - Angular (básico)</br>
           </mj-text>
           <mj-spacer height="24px" />
+          <mj-text css-class="cv-body-title">
+            Cursos extra curriculares
+          </mj-text>
+          <mj-spacer height="8px" />
+          <mj-text css-class="cv-body-text">
+            - Formação front-end - Alura</br>
+            - Formação HTML & CSS - Alura</br>
+            - Formação Acessibilidade web - Alura</br>
+            - Formação Ouse com VueJs 3 - Alura</br>
+            - Web design - Origamid</br>
+            - Inglês pré-intermediário - Alura</br>
+          </mj-text>
           
+        </mj-column>
+        <mj-column css-class="ps-3">
           <mj-text css-class="cv-body-title">
             Formação acadêmica
           </mj-text>
@@ -318,7 +331,6 @@
             2021-2023
           </mj-text>
           <mj-spacer height="24px" />
-          
           <mj-text css-class="cv-body-title">
             Experiência profissional
           </mj-text>
@@ -351,31 +363,11 @@
             - Criação de layouts responsivos com HTML, CSS e Vue.js.</br>
             - Desenvolvimento e personalização de sites no WordPress com Elementor.</br>
           </mj-text>
-          
-          <mj-text css-class="cv-body-title">
-            Cursos extra curriculares
-          </mj-text>
-          <mj-spacer height="8px" />
-          <mj-text css-class="cv-body-text">
-            - Formação front-end - Alura</br>
-            - Formação HTML & CSS - Alura</br>
-            - Formação Acessibilidade web - Alura</br>
-            - Formação Ouse com VueJs 3 - Alura</br>
-            - Web design - Origamid</br>
-            - Inglês pré-intermediário - Alura</br>
-          </mj-text>
         </mj-column>
       </mj-section>
       <mj-raw>
         </div>
       </mj-raw>
-    </mj-wrapper>
-    <mj-wrapper>
-      <mj-section>
-        <mj-column>
-          <mj-image src="https://res.cloudinary.com/drckdzkua/image/upload/v1741452518/curriculum_vitae_tzmwog.png" alt="curriculum" />
-        </mj-column>
-      </mj-section>
     </mj-wrapper>
     <mj-wrapper css-class="footer">
       <mj-section>
