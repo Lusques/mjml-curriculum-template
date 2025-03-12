@@ -124,22 +124,43 @@
         font-size: 14px !important;
         line-height: 26px !important;
       }
+      .nav-social-media div{
+        margin-bottom: 32px;
+      }
       .nav-social-media a {
+        border: none !important;
         box-sizing: content-box;
-        max-width: 24px;
         display: inline-block;
         margin-top: 12px;
-        padding-left: 16px !important;
-      }
-      .nav-social-media a:first {
-        padding-left: 0 !important;
       }
       .nav-social-media img {
         width: 100%;
       }
-      .lcs-icon {
-        display: flex;
-        justify-content: start;
+      .nav-whatsapp,
+      .nav-mail,
+      .nav-linkedin,
+      .nav-github {
+        background-position: center;
+        background-repeat: no-repeat;
+        background-size: contain;
+        border: solid 1px;
+        height: 24px;
+        margin-left: 16px;
+        width: 24px;
+        filter: initial !important;
+      }
+      .nav-whatsapp{
+        background-image: url('https://res.cloudinary.com/drckdzkua/image/upload/v1741818753/mdi_whatsapp_fkkigf.png');
+        margin-left: 0;
+      }
+      .nav-mail{
+        background-image: url('https://res.cloudinary.com/drckdzkua/image/upload/v1741818753/mdi_email_pjoqjj.png');
+      }
+      .nav-linkedin {
+        background-image: url('https://res.cloudinary.com/drckdzkua/image/upload/v1741818753/mdi_linkedin_td0zzd.png');
+      }
+      .nav-github {
+        background-image: url('https://res.cloudinary.com/drckdzkua/image/upload/v1741818753/mdi_github_sanuau.png');
       }
       .btn-contact a{
         border: solid 1px;
@@ -147,7 +168,7 @@
         display: block;
         font-size: 12px;
         font-weight: 500;
-        margin: 32px auto 48px !important;
+        margin: 32px auto!important;
         padding: 12px 24px !important;
         text-decoration: none;
         text-transform: uppercase;
@@ -158,6 +179,9 @@
       }
       .line-height-auto div{
       line-height: auto !important;
+      }
+      img {
+        filter: invert(0) !important;
       }
     </mj-style>
   </mj-head>
@@ -203,7 +227,7 @@
             Olá [Nome da Empresa], tudo bem?
           </mj-text>
           <mj-text css-class="description-text" padding="0">
-            Sou desenvolvedor Front-end com 3 anos de experiência em variadas tecnologias e frameworks. Estou em busca de novas oportunidades e acredito que posso contribuir de maneira significativa para o time da sua empresa.
+            Sou Front-End Developer com 3 anos de experiência em React.js, Vue.js, TypeScript e outras tecnologias modernas. Estou buscando novos desafios e acredito que minha experiência pode agregar valor à sua equipe.
           </mj-text>
         <mj-spacer height="24px" />
         </mj-column>
@@ -214,31 +238,19 @@
             🔹 Por que me escolher para o seu time?
           </mj-text>
           <mj-text css-class="description-text" padding="0">
-            💡 Experiência sólida com desenvolvimento Front-end, com foco em interfaces performáticas e bem estruturadas.</br>
+            💡 3 anos de experiência com tecnologias como Vue.js, React.js e TypeScript, focado em interfaces performáticas e bem estruturadas.</br>
           </mj-text>
           <mj-spacer height="8px"/>
           <mj-text css-class="description-text" padding="0">
-            🚀 Experiência em React.js, Vue.js, TypeScript, Wordpress e Figma, sempre atualizado com as melhores práticas.</br>
+            🎯 Comprometido com código limpo, acessibilidade e UX, sempre aplicando as melhores práticas.</br>
           </mj-text>
           <mj-spacer height="8px"/>
           <mj-text css-class="description-text" padding="0">
-            🎯 Comprometido com código limpo, acessibilidade e experiência do usuário.</br>
+            🤝 Colaboração e aprendizado contínuo são essenciais para o meu trabalho, facilitando a integração entre times técnicos e não técnicos.</br>
           </mj-text>
           <mj-spacer height="8px"/>
           <mj-text css-class="description-text" padding="0">
-            🤝 Colaboração e aprendizado contínuo são pilares no meu trabalho.</br>
-          </mj-text>
-          <mj-spacer height="8px"/>
-          <mj-text css-class="description-text" padding="0">
-            🗣️ Comunicação clara e objetiva, facilitando a troca entre times técnicos e não técnico.</br>
-          </mj-text>
-          <mj-spacer height="8px"/>
-          <mj-text css-class="description-text" padding="0">
-            📚 Curioso e sempre em busca de novos aprendizados, me adaptando rapidamente a diferentes desafios.</br>
-          </mj-text>
-          <mj-spacer height="8px"/>
-          <mj-text css-class="description-text" padding="0">
-            🔍 Pensamento analítico e resolução de problemas, garantindo soluções eficientes e escaláveis.</br>
+            📚 Apaixonado por novos desafios e tecnologias, sempre me adaptando rapidamente a novas necessidades.</br>
           </mj-text>
           <mj-spacer height="24px"/>
         </mj-column>
@@ -249,11 +261,18 @@
             🔹 Trabalho sério, feedbacks reais
           </mj-text>
           <mj-text css-class="description-text" padding="0">
-            "(...) Você é muito bom no que faz, humilde e sempre disposto a aprender."</br>— Guilherme Yabu, Ex-Tech Lead
+            "Lucas é uma pessoa excelente para se ter no time. Sempre disposto a ajudar e aprender, apesar de HTML e CSS serem sua especialidade, sempre está disposto a aprender uma linguagem ou framework novo para ajudar o time, o que agrega em possibilidades dentro do time.</br>
+            Também é muito dedicado com o que faz, sempre buscando deixar tudo da melhor forma e testada para garantir a qualidade."</br>— Guilherme Yabu, <b>Tech Lead na Toodoo<b/>
           </mj-text>
           <mj-spacer height="16px"/>
           <mj-text css-class="description-text">
-            "Lucas é uma pessoa racional e equilibrada, com uma maturidade emocional acima da média. Ele lida com desafios e pressões de maneira muito funcional"</br>— Felipe Rizzoto, feedback profissional e avaliação psicológica
+            "Tive a oportunidade de trabalhar com o Lucas em projetos, ele sempre se dedicou muito nas tarefas independente da tecnologia, já o acompanhei com Bootstrap e React, em ambas ele apresentou grande domínio e propriedade para explicar para os colegas de outras áreas que estavam na squad. Quem tiver ele na equipe estará com um grande profissional e não terá problemas no front-end, seja qual for."
+            </br>— Flávio Bergamini, <b>Desenvolvedor Back-end na Toodoo</b>
+          </mj-text>
+          <mj-spacer height="16px"/>
+          <mj-text css-class="description-text">
+            "Durante o período em que acompanhei Lucas, pude observar seu comprometimento com o autodesenvolvimento para reavaliar pontos em sua vida. Ele se destaca por sua empatia e simpatia genuína, sempre atento ao bem-estar daqueles ao seu redor. Além disso, é uma pessoa colaborativa, proativa e aberta ao diálogo, demonstrando maturidade e determinação para alcançar suas metas. Sua facilidade em se conectar com os outros e sua disposição para aprender fazem dele uma pessoa altamente adaptável e motivada."
+            </br>— Felipe Rizzotto, <b>psicólogo CRP: 04/68409</b>
           </mj-text>
         </mj-column>
       </mj-section>
@@ -301,17 +320,21 @@
           </mj-text>
           <mj-spacer height="8px" />
           <mj-text css-class="cv-body-text">
-            Experiência com:</br>
-            - HTML, CSS, JavaScript, Sass</br>
-            - React.js, Bootstrap, REST API</br>
-            - Git, Trello, Azure DevOps</br>
-            - Scrum, Figma</br>
-            - jQuery, PHP, WordPress (com e sem Elementor)</br>
-            - ASP.NET Core</br>
-            - Conhecimento com:</br>
-            - Flutter e Dart (básico)</br>
-            - Angular (básico)</br>
+            <strong>Experiência com:</strong><br>
+            • HTML, CSS, JavaScript, Sass<br>
+            • Vue.js, React.js, Bootstrap, REST API<br>
+            • Git, Trello, Azure DevOps<br>
+            • Scrum, Figma<br>
+            • jQuery, PHP, WordPress (com e sem Elementor)<br>
+            • MJML e criação de templates de email<br>
           </mj-text>
+          <mj-spacer height="8px" />
+          <mj-text css-class="cv-body-text">
+            <strong>Conhecimento básico:</strong><br>
+            • Flutter e Dart<br>
+            • Angular<br>
+          </mj-text>
+
           <mj-spacer height="24px" />
           
           <mj-text css-class="cv-body-title">
@@ -346,7 +369,7 @@
           </mj-text>
           <mj-spacer height="8px" />
           <mj-text css-class="cv-body-details">
-            Toodoo| Julho de 2022 - Fevereiro de 2025
+            Toodoo | Julho de 2022 - Fevereiro de 2025
           </mj-text>
           <mj-spacer height="8px" />
           <mj-text css-class="cv-body-text">
@@ -394,9 +417,23 @@
         <mj-column>
           <mj-text css-class="btn-contact">
             <mj-raw>
-              <a href="#">Me chame para uma conversa</a>
+              <a href="https://www.linkedin.com/in/lucascarlosdev/" target="__blank">Me chame para uma conversa</a>
             </mj-raw>
           </mj-text>
+        </mj-column>
+      </mj-section>
+      <mj-section background-color="white">
+        <mj-column>
+          <mj-navbar css-class="nav-social-media" align="center">
+            <mj-navbar-link css-class="nav-whatsapp" href="https://wa.me/+5511951233225" padding="0">
+            </mj-navbar-link>
+            <mj-navbar-link css-class="nav-mail" href="mailto:lucascarlosjobs@gmail.com?subject=Queremos que você seja o próximo Front-End da nossa equipe!" padding="0">
+            </mj-navbar-link>
+            <mj-navbar-link css-class="nav-linkedin" href="https://www.linkedin.com/in/lucascarlosdev/" padding="0">
+            </mj-navbar-link>
+            <mj-navbar-link css-class="nav-github" href="https://github.com/Lusques" padding="0"> 
+            </mj-navbar-link>
+          </mj-navbar>
         </mj-column>
       </mj-section>
     </mj-wrapper>
@@ -411,45 +448,19 @@
         ">
       </mj-raw>
       <mj-section>
-        <mj-column css-class="pe-3">
+        <mj-column width="100%">
           <mj-text css-class="footer-title">
-            Você não precisa mais procurar.
+            O profissional que sua equipe precisa está aqui.
           </mj-text>
           <mj-spacer height="8px" />
           <mj-text css-class="footer-text">
-            Eu sou o Front-end que você busca
-          </mj-text>
-          <mj-navbar css-class="nav-social-media" align="left">
-            <mj-navbar-link href="https://wa.me/+5511951233225" padding="0">
-              <mj-raw>
-                <img src="https://res.cloudinary.com/drckdzkua/image/upload/v1741727598/n6imjh4gxsmjpqcbp0nj.png" alt="Whatsapp"/>
-              </mj-raw>
-            </mj-navbar-link>
-            <mj-navbar-link href="mailto:lucascarlosjobs@gmail.com" padding="0">
-              <mj-raw>
-                <img src="https://res.cloudinary.com/drckdzkua/image/upload/v1741727598/b4qidyubyvhrutkb8zxh.png" alt="Email" style="margin-bottom: 4px;"/>
-              </mj-raw>
-            </mj-navbar-link>
-            <mj-navbar-link href="https://www.linkedin.com/in/lucascarlosdev/" padding="0">
-              <mj-raw>
-                <img src="https://res.cloudinary.com/drckdzkua/image/upload/v1741727598/tdy5segdbgrffueqv2rq.png" alt="Linkedin"/>
-              </mj-raw>
-            </mj-navbar-link>
-            <mj-navbar-link href="https://github.com/Lusques" padding="0"> 
-              <mj-raw>
-                <img src="https://res.cloudinary.com/drckdzkua/image/upload/v1741727598/tt5xafg8krxpjt8abwae.png" alt="Github"/>
-              </mj-raw>
-            </mj-navbar-link>
-          </mj-navbar>
-        </mj-column>
-        <mj-column>
-          <mj-text css-class="footer-text" align="right">
-            Com minha experiência e foco em resultados, estou aqui para agregar no seu time para juntos atingirmos um novo nível. Vamos conversar.  
+            Com a experiência que tenho, posso agregar resultados reais ao seu time de Front-End.
           </mj-text>
         </mj-column>
-      </mj-section>
-      <mj-section>
-        <mj-column>
+        <mj-column width="100%">
+          <mj-text css-class="footer-text" align="left">
+            Se você busca um Front-End Developer que entrega qualidade e resultados rápidos, vamos agendar uma conversa e discutir como podemos fazer isso acontecer.
+          </mj-text>
         </mj-column>
       </mj-section>
       <mj-raw>
