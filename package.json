@@ -6,7 +6,9 @@
   },
   "scripts": {
     "build": "node ./src/server.js",
-    "watch": "nodemon --watch ./src/templates/template.mjml --exec npm run build"
+    "watch": "nodemon --watch ./src/templates/template.mjml --exec npm run build",
+    "send": "node -r dotenv/config src/sendEmails.js"
+
   },
   "devDependencies": {
     "nodemon": "^3.1.9"
