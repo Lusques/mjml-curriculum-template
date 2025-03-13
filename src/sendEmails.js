@@ -16,16 +16,24 @@ const transporter = nodemailer.createTransport({
 });
 
 const emailList = JSON.parse(fs.readFileSync("src/emails.json", "utf8"));
-const emailHTML = "HTML CODE";
 
 async function sendEmails() {
-  for (const { email } of emailList) {
+  for (const { nome, email } of emailList) {
     try {
+      let emailHTML = fs.readFileSync("src/output/template.html", "utf8");
+      emailHTML = emailHTML.replace(/{{empresa}}/g, nome);
       await transporter.sendMail({
         from: `"Lucas Silva" <${process.env.EMAIL}>`,
         to: email,
-        subject: "título do email",
+        subject: `${nome}, o desenvolvedor front-end que você procura está aqui!`,
         html: emailHTML,
+        attachments: [
+          {
+            filename: "Curriculo_Frontend_Lucas_Silva.pdf",
+            path: "src/assets/curriculo_lucas_silva.pdf",
+            
+          },
+        ],
       });
       console.log(`Email enviado para: ${email}!`);
     } catch (error) {
