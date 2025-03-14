@@ -224,7 +224,7 @@
       <mj-section css-class="description-container">  
         <mj-column padding="0">
           <mj-text css-class="description-title" padding="0">
-            {{empresa}}, é um prazer me conectar com você.
+            {{greetings}}
           </mj-text>
           <mj-text css-class="description-text" padding="0">
             Sou Front-End Developer com 3 anos de experiência em React.js, Vue.js, TypeScript e outras tecnologias modernas. Estou buscando novos desafios e acredito que minha experiência pode agregar valor à sua equipe.
