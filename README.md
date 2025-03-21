@@ -33,10 +33,10 @@ Este é um projeto de portfólio que tem como objetivo a criação de templates 
    ```
 2. Alterar o template de e-mail:</br>
 O template que está em uso no projeto é um currículo pessoal. Altere o arquivo src/templates/template.mjml para o seu próprio template de e-mail, de acordo com a necessidade.
-3.Crie um arquivo .env na raiz do projeto e adicione as informações do seu serviço de e-mail (exemplo para Gmail):
+3. Crie um arquivo .env na raiz do projeto e adicione as informações do seu serviço de e-mail (exemplo para Gmail):
 ```bash
 EMAIL_USER=seuemail@gmail.com
-EMAIL_PASS=sua-chave-de-acesso
+EMAIL_ACCESS_KEY==sua-chave-de-acesso
 ```
 Nota: Substitua seuemail@gmail.com e sua-chave-de-acesso pelos dados reais da sua conta de e-mail. Você pode gerar uma chave de acesso se estiver usando o Gmail acessando esta página e habilitando o acesso para apps menos seguros.
 4. Preencher os dados de e-mails: A lista de destinatários para o envio de e-mails deve ser configurada no arquivo src/emails.json. Este arquivo deve conter um array de objetos, onde cada objeto representa um destinatário com seu nome e endereço de e-mail. Use o arquivo de exemplo src/emails.example.json como base.
@@ -62,10 +62,19 @@ npm run send
 O Nodemailer usará o template gerado em HTML e enviará o e-mail para todos os destinatários definidos no arquivo emails.json.
 
 ### Scripts
-- npm run build: Gera o HTML a partir do template MJML (executado automaticamente ao salvar o arquivo).
-- npm run watch: Inicia o nodemon e observa mudanças no arquivo src/templates/template.mjml. O arquivo será automaticamente compilado para HTML e salvo em src/output.
-- npm run send: Envia um e-mail utilizando as credenciais definidas no arquivo .env e o template MJML. O e-mail será enviado para os destinatários listados no arquivo src/emails.json. Certifique-se de que o arquivo sendEmails.js esteja configurado corretamente para enviar o e-mail desejado.
-- 
+```bash
+npm run build
+```
+Gera o HTML a partir do template MJML (executado automaticamente ao salvar o arquivo).
+```bash
+npm run watch
+```
+Inicia o nodemon e observa mudanças no arquivo src/templates/template.mjml. O arquivo será automaticamente compilado para HTML e salvo em src/output.
+```bash
+npm run send
+```
+Envia um e-mail utilizando as credenciais definidas no arquivo .env e o template MJML. O e-mail será enviado para os destinatários listados no arquivo src/emails.json. Certifique-se de que o arquivo sendEmails.js esteja configurado corretamente para enviar o e-mail desejado.
+
 ### Estrutura do Projeto
 
 - **src/templates**: Contém os arquivos MJML com os templates de e-mail.
